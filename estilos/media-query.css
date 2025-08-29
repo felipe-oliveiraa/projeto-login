@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+/* Typical Device Breakpoints
+-------------------------------
+  Pequenas telas: até 600px
+  Celulares: 600px a 768px
+  Tablets: 768px a 992px
+  Desktops: 992px a 1200px
+  Grandes desktops: acima de 1200px
+*/
+
+@media screen and (min-width: 768px) { /* tablets e desktops */ 
+    body {
+        background-image: linear-gradient( to top, #49a09d, #5f2c82 );
+    }
+
+    section#login {
+        width: 80vw; /* largura do container */
+    }
+
+    section#login div#imagem {
+        float: left; /* faz a div da imagem flutuar para a esquerda */
+        width: 40%; /* largura da div da imagem */
+        height: 100%; /* altura da div da imagem */
+    }
+
+    section#login div#formulario {
+        float: right; /* faz a div do formulario flutuar para a direita */
+        width: 60%; /* largura da div do formulario */
+        
+    }
+}
+    
+@media screen and (min-width: 992px) { /* desktops e grandes desktops */ 
+    body {
+        background-image: linear-gradient( to top, #49a09d, #5f2c82 );
+    }
+
+    section#login {
+        width: 900px; /* largura do container */
+    }
+
+    section#login div#imagem {
+        float: right; /* faz a div da imagem flutuar para a esquerda */
+        width: 50%; /* largura da div da imagem */
+        height: 100%; /* altura da div da imagem */
+    }
+
+    section#login div#formulario {
+        float: left; /* faz a div do formulario flutuar para a direita */
+        width: 50%; /* largura da div do formulario */
+    }
+
+    div#formulario h1 {
+    font-size: 2em;
+}
+
+div#formulario p {
+    font-size: 1.2em;
+}    
+
+}    
